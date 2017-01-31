@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Classes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="BootstrapAssist.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .navbar-inverse{
+                background-color: #1B2631;
+            }
+        </style>
+        <script>
+            /*6 Drawers */
+            $(document).ready(function () {
+                $("#switch1").click(function () {
+                    $("#drawer1").slideToggle("slow");
+                });
+            });
+            $(document).ready(function () {
+                $("#switch2").click(function () {
+                    $("#drawer2").slideToggle("slow");
+                });
+            });
+            $(document).ready(function () {
+                $("#switch3").click(function () {
+                    $("#drawer3").slideToggle("slow");
+                });
+            });
+            $(document).ready(function () {
+                $("#switch4").click(function () {
+                    $("#drawer4").slideToggle("slow");
+                });
+            });
+            $(document).ready(function () {
+                $("#switch5").click(function () {
+                    $("#drawer5").slideToggle("slow");
+                });
+            });
+            $(document).ready(function () {
+                $("#switch6").click(function () {
+                    $("#drawer6").slideToggle("slow");
+                });
+            });
+            
+            /*3 Buttons*/
+            $(document).ready(function(){
+                $(".col-md-2").click(function(){
+                    window.location= $(this).find("a").attr("href");
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="newindex.html">MyatMinMaung</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav  navbar-nav nav-pills">
+                        <li><a href="newindex.html">Home</a></li>
+                        <li><a href="newabout.html">About Me</a></li>
+                        <li><a href="Tcal.php">Tip Calculator</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="jumbotron">
+            <img src="https://www.schoolstoreng.com/media/wysiwyg/Subject_icons_for_portal-01_1.png">
+        </div>
+
+        <!-- Intro -->
+        <div class="centeredBody" style="background-color: dimgray; opacity: 0.7;">
+            <h1 style="color: #ffffff"> Classes </h1>
+            <font size="4" color="white">       
+            The programming languages i have learnt from SFSU are shown below. To see classes related <br>
+            to the language on each tab, click on the tab.
+            </font>
+        </div><br>
+
+        <!-- Classes -->
+        <!-- C++ -->
+        <div id="switch1">C++</div>
+        <div id="drawer1">
+            <p>ENGN 38: Intro to Computing for Engineers<br>
+                CSC 340: Programming Methodology<br>
+                CSC 600: Programming Languages</p>
+        </div><br>
+        <!-- Java -->
+        <div id="switch2">Java</div>
+        <div id="drawer2">
+            <p>CS 111A: Intro to Programming<br>
+                CS 111B: Programming Fundamentals<br>
+                CS 111C: Data Structure and Algorithm</p>
+        </div><br>
+        <!-- Prolog, Scheme, Ruby -->
+        <div id="switch3">Prolog, Scheme, Ruby</div>
+        <div id="drawer3">
+            <p>CSC600: Programming Languages</p>
+        </div><br>
+        <!-- MySQL -->
+        <div id="switch4">MySQL</div>
+        <div id="drawer4">
+            <p>CSC 675: Introduction to DataBase System</p>
+        </div><br>
+        <!-- Html,CSS,JavaScript,PHP,BootStrap -->
+        <div id="switch5">Html,CSS,JavaScript,PHP,BootStrap</div>
+        <div id="drawer5">
+            <p>CSC 412: Advance Software Lab</p>
+        </div><br>
+        <!-- Html,CSS,JavaScript,PHP,BootStrap -->
+        <div id="switch6">Team Work Experience</div>
+        <div id="drawer6">
+            <p>CSC 413: Software Development<br>
+                CSC 648: Software Engineering<br>
+                CSC 675: Introduction to DataBase System<br>
+                CSC 868: Advanced Object Oriented Software Design and Development</p>
+        </div><br>
+        <br>
+
+        <!-- 3 Buttons -->
+        <div class="row">
+            <div class="col-md-1" style="background-color: transparent;">
+            </div>
+            <!-- Classes -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="http://ksuweb.kennesaw.edu/~xxu6/home.png">
+                <h1><a href="newindex.html">Home</a></h1>
+            </div>
+            <div class="col-md-2" style="background-color: transparent;">
+            </div>
+            <!-- Assignments -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="assignments.jpg">
+                <h1><a href="assignments.html">Assignments</a></h1>
+            </div>
+            <div class="col-md-2" style="background-color: transparent;">
+            </div>
+            <!-- Projects -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="gun.png">
+                <h1><a href="projects.html">Projects</a></h1>
+            </div>
+        </div>
+    </body>
+</html>

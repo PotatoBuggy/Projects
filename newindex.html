@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Bootstrap Stuffs -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="BootstrapAssist.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>
+            Home
+        </title>
+        <script>
+            /* Finder in 3 Buttons */
+            $(document).ready(function () {
+                $(".col-md-2").click(function () {
+                    window.location = $(this).find("a").attr("href");
+                    return false;
+                });
+            });
+        </script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="newindex.html">MyatMinMaung</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav  navbar-nav nav-pills">
+                        <li class="active"><a href="newindex.html">Home</a></li>
+                        <li><a href="newabout.html">About Me</a></li>
+                        <li><a href="Tcal.php">Tip Calculator</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+
+        <!-- Carrousel -->
+        <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- How Carousel go -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" ></li>
+                    <li data-target="#myCarousel" data-slide-to="2" ></li>
+                </ol>
+
+                <!-- Things to show in Carousel  460w 345h -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- Item 1 -->
+                    <div class="item active">
+                        <img class="carousel-image"  src="http://www.travelzoo.com/blog/wp-content/uploads/2015/09/shutterstock_89117647-720x480.jpg"
+                             alt="GGBridge" width="460" height="345">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="item">
+                        <img class="carousel-image" src="http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-4.png"
+                             alt="Coding" width="460" height="345">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="item">
+                        <img class="carousel-image" src="http://www.nobrowcoffee.com/wp-content/uploads/2016/04/coffee-wallpaper-1306-1433-hd-wallpapers.jpg"
+                             alt="Coffee" width="460" height="345">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- Intro Division -->
+        <div class="centeredBody" style="background-color: dimgray; opacity: 0.7;">
+            <h1 style="color: #ffffff"> Welcome </h1>
+            <font size="4" color="white">       This site will help you understand more about me. Below, there are links <br>
+            showing the classes i have taken, assignments i have done and projects i have <br>
+            made. If you want to know more about me besides from my skills and experiences,<br>
+            please visit to "About me" page.</font>
+        </div><br>
+
+        <!-- 3 Buttons -->
+        <div class="row">
+            <div class="col-md-1" style="background-color: transparent;">
+            </div>
+            <!-- Classes -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="classes.png">
+                <h1><a href="classes.html">Classes</a></h1>
+            </div>
+            <div class="col-md-2" style="background-color: transparent;">
+            </div>
+            <!-- Assignments -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="assignments.jpg">
+                <h1><a href="assignments.html">Assignments</a></h1>
+            </div>
+            <div class="col-md-2" style="background-color: transparent;">
+            </div>
+            <!-- Projects -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="gun.png">
+                <h1><a href="projects.html">Projects</a></h1>
+            </div>
+        </div>
+        <br>
+
+        <!-- Footer -->
+        <div class="centeredBody" style="opacity: 0.9;">
+            <h1 style="color: #ffffff"> Follow Me On: </h1><br>
+            <!-- Linkin -->
+            <a href="https://www.linkedin.com/nhome/?trk=">
+                <img id="Li" src="http://www.mh-corporateservices.com/uploads/3/9/1/0/39105277/f7cd0d04-6000-4ceb-a71b-4c7f25e8bd5a-1658-0000043c1ab32a36.png"
+                     alt="linkin" width="60">
+            </a>
+
+            <!-- Github -->
+            <a href="https://github.com/PotatoBuggy">
+                <img id="Gi" src="http://cdn.mysitemyway.com/icons-watermarks/flat-rounded-square-white-on-black/foundation/foundation_social-github/foundation_social-github_flat-rounded-square-white-on-black_512x512.png"
+                     alt="github" width="55">
+            </a>
+        </div>
+    </body>
+</html>

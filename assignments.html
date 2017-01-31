@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Assignments</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="BootstrapAssist.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            /* Navi Bar */
+            .navbar-inverse{
+                background-color: #1B2631;
+            }
+            /* Table */
+            .table-hover tbody tr:hover td {
+                background-color: #D4EFDF  ;
+            }
+            
+            table,th,td{
+                background-color: white;
+            }
+        </style>
+        <script>
+            /* 3 Buttons */
+            $(document).ready(function(){
+                $(".col-md-2").click(function(){
+                    window.location= $(this).find("a").attr("href");
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="newindex.html">MyatMinMaung</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav  navbar-nav nav-pills">
+                        <li><a href="newindex.html">Home</a></li>
+                        <li><a href="newabout.html">About Me</a></li>
+                        <li><a href="Tcal.php">Tip Calculator</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="jumbotron">
+            <img src="http://www.qsdigitalsolutions.com/wp-content/uploads/2015/07/student-subject-choices-stem-drift-bobbed.jpg">
+        </div>
+        
+        <!-- Intro -->
+        <div class="centeredBody" style="background-color: dimgray; opacity: 0.7;">
+            <h1 style="color: #ffffff"> Assignments </h1>
+            <font size="4" color="white">       
+            I have posted some of the interesting assignments related to each programming language<br>
+            on Github. The table below can be used as a map to my Github account.
+            </font>
+        </div><br><br>
+        
+        <!-- Tables -->
+        <div style="background-color: transparent;">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <!-- Head -->
+                    <thread>
+                        <tr>
+                            <th>#</th>
+                            <th>Languages</th>
+                            <th>Related Assignments</th>
+                        </tr>
+                    </thread>
+                    <!-- Body -->
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>C++</td>
+                            <td><a href="https://github.com/PotatoBuggy/C-plus-plus">GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Java</td>
+                            <!-- <td><a href="https://github.com/PotatoBuggy/Java">COMING SOON</a></td> -->
+                            <td>COMING SOON</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Prolog, Scheme and Ruby</td>
+                            <td><a href="https://github.com/PotatoBuggy/Prolog-Scheme-and-Ruby">GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MySQL</td>
+                            <td><a href="https://github.com/PotatoBuggy/MySQL">GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Html, Css, JavaScript, PHP and BootStrap</td>
+                            <td><a href="https://github.com/PotatoBuggy/Html-Css-JavaScript-PHP-and-BootStrap">GitHub</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Team Work Experience</td>
+                            <td><a href="https://github.com/PotatoBuggy/Team-Work-Experience">GitHub</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <!-- 3 Buttons -->
+        <div class="row">
+            <div class="col-md-1" style="background-color: transparent;">
+            </div>
+            <!-- Classes -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="classes.png">
+                <h1><a href="classes.html">Classes</a></h1>
+            </div>
+            <div class="col-md-2" style="background-color: transparent;">
+            </div>
+            <!-- Assignments -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="http://ksuweb.kennesaw.edu/~xxu6/home.png">
+                <h1><a href="newindex.html">Home</a></h1>
+            </div>
+            <div class="col-md-2" style="background-color: transparent;">
+            </div>
+            <!-- Projects -->
+            <div class="col-md-2" style="border-style: solid; border-width: medium; background-color: white">
+                <img src="gun.png">
+                <h1><a href="projects.html">Projects</a></h1>
+            </div>
+        </div>
+    </body>
+</html>
