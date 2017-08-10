@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\spenc\Desktop\Final Crawl\668-term-project\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\spenc\Desktop\Final Crawl\668-term-project\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9131b15585f0b4aa19ad038c4fc58b4aa6289a16\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\spenc\Desktop\Final Crawl\668-term-project\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f992d9a12ebbd5b7d44f372b0d1d8f1ebb1b1629">
+        <dex dex="C:\Users\spenc\Desktop\Final Crawl\668-term-project\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_94bf99fdb65a6301e7bc26901fead32e1c38cee7\classes.dex" />
+    </item>
+
+</items>
